@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+    <head></head>
+    <body>
+        <h1>Exams list</h1>
+
+        <ul>
+            {% for exam in exams %}
+                <li>{{ exam.name }} - {{ exam.date|date }}
+                - <a href="{{ path('exam_delete', {id: exam.id}) }}">Delete</a>
+                </li>
+            {% endfor %}
+            <a style="display:block; margin-top:20px;" href="{{ path('exam_add') }}">Add an Exam</a>
+        </ul>
+    </body>
+</html>

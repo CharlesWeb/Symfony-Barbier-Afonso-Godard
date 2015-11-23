@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+    <head></head>
+    <body>
+        <h1>Admins list</h1>
+
+        <ul>
+            {% for admin in admins %}
+                <li>{{ admin.firstName }} - {{ admin.lastName }}
+                - <a href="{{ path('admin_delete', {id: admin.id}) }}">Delete</a>
+                </li>
+            {% endfor %}
+            <a style="display:block; margin-top:20px;" href="{{ path('admin_add') }}">Add an Admin</a>
+        </ul>
+    </body>
+</html>

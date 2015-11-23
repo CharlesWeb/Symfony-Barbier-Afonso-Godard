@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+    <head></head>
+    <body>
+        <h1>Students list</h1>
+
+        <ul>
+            {% for student in students %}
+                <li>{{ student.firstName }} - {{ student.lastName }}
+                - <a href="{{ path('student_delete', {id: student.id}) }}">Delete</a>
+                </li>
+            {% endfor %}
+            <a style="display:block; margin-top:20px;" href="{{ path('student_add') }}">Add an Student</a>
+        </ul>
+    </body>
+</html>
