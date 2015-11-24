@@ -15,12 +15,12 @@ security:
             http_basic: ~
             provider: in_memory
 
-        main:
-            pattern: /
-            anonymous: ~
-            knpu_guard:
-                authenticators:
-                    - app.api_token_authenticator
+        #main:
+        #    pattern: /
+        #    anonymous: ~
+        #    knpu_guard:
+        #        authenticators:
+        #            - app.api_token_authenticator
                 # by default, use the start() function from FormLoginAuthenticator
 
     access_control:

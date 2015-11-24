@@ -1,4 +1,5 @@
 <?php
+
 namespace AppBundle\Security;
 use KnpU\Guard\AbstractGuardAuthenticator;
 use Symfony\Component\HttpFoundation\Request;

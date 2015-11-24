@@ -21,7 +21,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-            new KnpU\GuardBundle\KnpUGuardBundle(),
+            
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
